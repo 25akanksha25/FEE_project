@@ -1,7 +1,6 @@
+
 hello
 bye
 
 night 
 morning
-
-have a good day
