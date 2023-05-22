@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one
+        {
+            text-align: center;
+            font-size: 1cm;
+            background-color: brown;
+        }
+        .container
+        {
+           height: auto; 
+           width: auto;
+           display: flex;
+           background-color: bisque;
+        }
+        .container div{
+            
+            height: 300px;
+            width: 350px;
+            
+            margin: 50px;
+            padding: 4px;
+            color: aliceblue;
+            display: flex;
+            font-size: small;
+        }
+        
+        
+        .zoom {
+    padding: 30px;
+    transition: transform .2s;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    }
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+        
+       
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <script src="jquery-3.7.0.min.js">
+    </script>
+    <!-- <script>
+        $('img').click(function(){
+            $('img').animate({height:"400px"})
+        })
+    </script> -->
+    <div id="one">
+        <h> KIDS ROOM INTERIORS</h>
+    </div><br><br>
+    <div class="container">
+        <h1> BED DESIGNS</h1>
+        <div><img src="https://i.pinimg.com/564x/59/df/4c/59df4c03a61f84570ef1eb82f9d034e4.jpg" class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/51/d9/00/51d9004530d9e23cda555d86b7728e18.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/a4/91/fc/a491fc588c6c25285412a89e8109af88.jpg" class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> STUDY TABLE</h1>
+        <div><img src="https://i.pinimg.com/564x/6c/24/e0/6c24e0e614c9ac10eb5002a70caca36c.jpg" class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/13/87/b6/1387b6bd04de55d3b8bd25d010980d0c.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/a4/93/ae/a493aecbd54c24c4251f9b4cda122e90.jpg"  class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> TOY ROOM</h1>
+        <div><img src="https://i.pinimg.com/564x/5b/b1/92/5bb192a4ced1c0a629d857989d672e25.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/fd/4e/56/fd4e560346a1e799c886bbcc9453f9e2.jpg"  class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/5f/6c/dd/5f6cdd04ebba77ab448c77fa13b8653c.jpg"  class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> WALL ART</h1>
+        <div><img src="https://i.pinimg.com/564x/b7/3b/50/b73b50da8f0eaca5a2afa7deb8b3fa6a.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/dd/c9/76/ddc9767707963f00f375949d90beffc5.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/51/20/26/51202682b8fa30682b3b6aeee5b958e4.jpg" class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> BOOK SHELVES</h1>
+        <div><img src="https://i.pinimg.com/564x/ef/f0/a9/eff0a99823d7a3339173fcc87d0ccd6f.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/8e/81/2c/8e812c8edd14b1cdfcd012a5f88c7754.jpg"  class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/9c/1c/b3/9c1cb3400a14418c4528fbfda1c8be08.jpg"  class="zoom"></div>
+    </div>
+    
+</body>
+</html>
