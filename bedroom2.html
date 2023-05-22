@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one
+        {
+            text-align: center;
+            font-size: 1cm;
+            background-color: brown;
+        }
+        .container
+        {
+           height: auto; 
+           width: auto;
+           display: flex;
+           background-color: bisque;
+        }
+        .container div{
+            height: 300px;
+            width: 350px;
+            margin: 50px;
+            padding: 4px;
+            color: aliceblue;
+            display: flex;
+            font-size: small;
+        }
+        
+        
+        .zoom {
+            padding: 30px;
+            transition: transform .2s;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.2);
+        }
+                
+        #popup {
+        position: absolute;
+        top: -70px;
+        left: -550px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        z-index: 1;
+        }
+
+        .exit {
+            position: absolute;
+        margin-right: 10px;
+        margin-bottom: 450px;
+        }
+
+        .exit button {
+        background: none;
+        border: none;
+        color: #000000;
+        font-size: 20px;
+        cursor: pointer;
+        }
+
+
+        .content {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right:10px;
+        margin-bottom: 10px;
+        }
+
+        .top-section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        }
+
+        .bottom-section {
+        margin-top: 180px;
+        }
+
+        h2 {
+        color: #000000;
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        margin: 0;
+        }
+
+        p {
+        color: #666;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        }
+
+        form {
+        margin-top: 20px;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-family: Arial, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="tel"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        }
+
+        button[type="submit"] {
+        background-color: #f12929;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+        background-color:rgb(221, 97, 97);
+        }
+        #m1{
+            float: left;
+            width: 150px;
+            height:202px;
+            border: 1px solid black;
+            border-radius: 2%;
+            margin: 0;
+        }
+        #m2{
+            float: right;
+            width: 150px;
+            height:202px;
+            border: 1px solid black;
+            border-radius: 2%;
+            margin: 0;
+        }
+        #avail{
+            font-size: 20px;
+            margin: 0;
+        }
+        #upto{
+            color:coral;
+            font-size: 30px;
+            margin:0;
+        }
+    </style>
+    <script>
+        function closePopup(){
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</head>
+<body style="background-color: bisque;">
+    <div id="one">
+        <h> BEDROOM INTERIORS</h>
+    </div><br><br>
+    <div class="container">
+        <h1> BED DESIGNS</h1>
+        <div><img src="https://i.pinimg.com/564x/48/0f/dd/480fddd46d49f3bfa416d43897b9224a.jpg" class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/94/53/bd/9453bd6e4ea22a9eccb6c0410c788a31.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/53/41/8a/53418aa8293eb49183f80fd97452459e.jpg" class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> WALL ART</h1>
+        <div><img src="https://i.pinimg.com/564x/8e/8b/20/8e8b20513765b5c2279c3ab8815b078d.jpg" class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/66/69/4a/66694a8e7cb2775e9efce71d53a8d4b4.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/88/30/a2/8830a27d8340a7850aa3d24c98cf7f11.jpg"  class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> CABINETS</h1>
+        <div><img src="https://i.pinimg.com/564x/b7/68/2d/b7682d468daccc8589a65a365ed9bfce.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/23/2e/b6/232eb6deb170dc98d5d916c1a31c7576.jpg"  class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/4f/91/88/4f9188995c3b9e0199b7a3b5f5a9d79e.jpg"  class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> SHELVES</h1>
+        <div><img src="https://i.pinimg.com/564x/cf/f4/bd/cff4bd3b3f06d8a7cca0a040da97932f.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/e2/54/81/e25481392a6efea66242c215fb7107f1.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/5a/b6/b5/5ab6b5cb8b9507eaa8cd62a9e8f0a4d4.jpg" class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> CUPBORDS</h1>
+        <div><img src="https://i.pinimg.com/564x/50/97/72/50977233b7ea8fae22ac4e736c325a23.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/31/b5/0f/31b50f022098a91f530528e146ca750d.jpg"  class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/13/c4/de/13c4de73b9245d48724c204e6ca02e4c.jpg"  class="zoom"></div>
+    </div>
+
+
+    <!-- Popup code -->
+    <div id="popup" class="hidden">
+        <div class="exit">
+          <button onclick="closePopup()">&#215;</button>
+        </div>
+    <div class="content">
+      <div class="top-section">
+        <div id="m1"><img src="https://i.pinimg.com/564x/dd/5f/c1/dd5fc16badb53007a51c1c16b44bbdf1.jpg" alt="Image 1"></div>&emsp;
+        <div id="m2"><img src="https://i.pinimg.com/564x/32/2e/a4/322ea42b77806a216f7d335f0ca71ca2.jpg" alt="Image 2"></div>
+      </div>
+      <div class="bottom-section">
+        <h2><b>Register Now</b></h2>
+        <p id="avail">& Get a Chance to Avail</p>
+        <p id="upto"><b>Upto 55% OFF</b></p>
+        <form>
+          <label for="fullname"></label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+          <br>
+          <label for="mobile"></label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+          <br>
+          <button type="submit" onclick="closePopup()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    
+</body>
+</html>
