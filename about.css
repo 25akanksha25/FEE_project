@@ -1,0 +1,75 @@
+h1{
+    color: #1C0A00;
+    font-weight: 1000;
+    font-size: 60px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    margin-top: 140px;
+}
+p
+{
+    color: #603601;
+    font-size: 30px;
+    font-weight: 20px;
+}
+.container
+{
+    background-color: #CC9544;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    column-gap: 25px;
+}
+.item
+{
+    background-color: #361500;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: bisque;
+    padding: 30px;
+}
+.sub-head
+{
+    font-family: 'Shadows Into Light', cursive;
+    color:#1C0A00;
+    margin: 0;
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+}
+.sub-head2
+{
+    font-family: 'Comic Sans MS', sans-serif;
+    color: white;
+    margin: 0;
+    margin-bottom: 150px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+.featured
+{
+    margin-bottom: 100px;
+}
+.quality
+{
+    width: 100px;
+    padding: 10px 0px;
+}
+.delivery
+{
+    width: 100px;
+    padding: 10px 0px;
+
+}
+.return
+{
+    width: 120px;
+    padding: 10px 0;
+}
+.support
+{
+    width: 100px;
+    padding: 10px 0;
+}
