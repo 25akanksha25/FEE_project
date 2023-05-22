@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #one
+        {
+            text-align: center;
+            font-size: 1cm;
+            background-color: brown;
+        }
+        .container
+        {
+           height: auto; 
+           width: auto;
+           display: flex;
+           background-color: bisque;
+        }
+        .container div{
+            
+            height: 300px;
+            width: 350px;
+            
+            margin: 50px;
+            padding: 4px;
+            color: aliceblue;
+            display: flex;
+            font-size: small;
+        }
+        
+        
+        .zoom {
+    padding: 30px;
+    transition: transform .2s;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    }
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+        
+       
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <script src="jquery-3.7.0.min.js">
+    </script>
+    <!-- <script>
+        $('img').click(function(){
+            $('img').animate({height:"400px"})
+        })
+    </script> -->
+    <div id="one">
+        <h> LIVING ROOM INTERIORS</h>
+    </div><br><br>
+    <div class="container">
+        <h1> SOFA</h1>
+        <div><img src="https://i.pinimg.com/564x/0d/97/b7/0d97b7e11d0dd7749a685dea480bac30.jpg" class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/8d/85/b1/8d85b12e0ff6c08e5d0ea9f9a95c86dc.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/10/9d/ba/109dba8800f7aff8b79175f796fa8b97.jpg" class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> COFFE TABLE</h1>
+        <div><img src="https://i.pinimg.com/564x/12/8b/48/128b48f8a90b3f5937e517592faf1231.jpg" class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/37/4a/c6/374ac6b77704fc757d1df004be3df0aa.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/60/b8/41/60b841e30f419cb04318c2225d27d96b.jpg"  class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> BOOK SHELVES</h1>
+        <div><img src="https://i.pinimg.com/564x/ac/68/fb/ac68fba55dc32240ca8adf55b9101e5d.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/f4/af/dd/f4afddbd0700a288a46604de66f09e69.jpg"  class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/4b/10/26/4b10262752cd83dfbd5f8593ad582f71.jpg"  class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> RUGS   </h1>
+        <div><img src="https://i.pinimg.com/564x/9b/99/82/9b99820b72fb83413efc6a998c84461b.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/72/b8/82/72b88245ad6d278d2f3236e3b1211238.jpg" class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/72/b8/82/72b88245ad6d278d2f3236e3b1211238.jpg" class="zoom"></div>
+    </div>
+    <div class="container">
+        <h1> ELECRIC LAMPS</h1>
+        <div><img src="https://i.pinimg.com/736x/5b/e1/e9/5be1e9aafa865dcae4821c9a0b94ae73.jpg"  class="zoom"> </div> 
+        <div> <img src="https://i.pinimg.com/564x/bb/17/b7/bb17b79d8cbdce51522993633a9ce3dd.jpg"  class="zoom"></div>
+        <div> <img src="https://i.pinimg.com/564x/fc/4b/f2/fc4bf236d102217efa2aa314bae8cd9b.jpg"  class="zoom"></div>
+    </div>
+    
+</body>
+</html>
