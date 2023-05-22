@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>HOME HAVEN</title>
+  <link rel="stylesheet" href="project (2).css">
+  <script>
+    function hidepopup(){
+      document.getElementById("main23").style.display="none";
+    }
+
+    function showpopup(){
+      document.getElementById("main23").style.display = "inline";
+    }
+
+    setTimeout(function(){
+      showpopup();
+    },3000);
+  </script>
+</head>
+<body>
+ 
+  <div class="main">
+    <br>
+    <div class="content">
+      <nav>
+        <b><b><ul id="ak">
+          <li><button class="btn"><b>HOME</b></button></li>
+          <li><a class="anchor" href="about.html"><button class="btn">ABOUT US</button></a></li>       
+          <li><a class="anchor" href="product.html"><button class="btn">PRODUCTS</button></a></li>
+          <li><button class="btn"onclick="showQueryPopup()">QUERY</button></li>
+          </ul></div>
+        <ul id="lft2">
+
+         <li><button class="btn"onclick="showLoginPopup()">SIGN IN </button></li>
+         </b></b>
+          </ul>
+        
+          <!-- <li><button class="btn"><a href="project2.html">LEAVE</a></button></li> -->
+     
+      </nav>
+      
+    
+    <div class="content2">
+      <h1><b>HOME HAVEN</b></h1>
+       <h2><br>Hey! Welcome to a world for inspiration for your home</h2>
+        <b><br><h3>HOUSE DECOR SERVICES</h3></b>
+        <!-- <p>Welcome to HOME HAVEN, where we believe that a beautiful home should be accessible to everyone. Our curated collection of [style/ theme] home decor products is designed to elevate your space and express your unique personality. From [specific product/ style], to [specific product/ style], our selection is carefully chosen to bring beauty and inspiration into your home. Explore our website to find the perfect pieces for your space and transform your house into a home you love.</p> -->
+   
+    
+  </div>
+  
+    </div>
+   <div id="main23">
+    <img class="image23" src="cookies.webp" alt="">
+    <div class="content23">
+        <header>COOKIES CONSENT</header>
+        <p>Our website use cookies to make your experience better on the site. Please accept it to move further</p>
+            <button type="submit" class="btns23" onclick="hidepopup()">I understand</button>
+        
+           
+        </div>
+    </div>
+</div>
+
+  <div id="loginPopup" class="login-popup" style="height:auto;">
+    <div class="login-content">
+      <span class="close" onclick="closeQueryPopup()">&times;</span>
+      <h2 style="font-family: cursive;">ANY QUERY</h2><br><br>
+      <form>
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email"  placeholder="name@abc.com" required><br><br>
+        
+        <label for="password"><b>Mobile No:</b></label><br>
+        <input type="number" id="number" name="no" placeholder="Enter Mobile No "required><br><br>
+
+        <label for="email"><b>Enter your query:</b></label>
+        <textarea name="a1" rows="8" cols="25"></textarea><br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+        <button type="submit" class="btn3" onclick="showsubmit()">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <script src="waste2.js"></script>
+  <!-- sign in -->
+
+  <div id="loginPopup2" class="login-popup2" style="height:auto;">
+    <div class="login-content2">
+      <span class="close2" onclick="closeLoginPopup()">&times;</span>
+      <h2 style="font-family: cursive;">Sign In</h2><br><br>
+      <form>
+        <label for="email"><b> Email: </b></label><br>
+        <input type="email" id="email" name="email"  placeholder="name@abc.com" style="height: 30px; width: 200px;" required><br><br>
+        
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" placeholder="Enter password" style="height: 30px; width: 200px;" required><br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+        <button type="submit" class= "btn2"  onclick="showCreateAccount()" style="color: black;">Create An Account</button><br><br><br><br>
+        <p style="color:black ;"> Already have an account?<a href="#">Sign In</a></p>
+       
+      </form>
+    </div>
+  </div>
+  <script src="waste.js"></script>
+
+
+
+
+    
+  
+</body>
+</html>
