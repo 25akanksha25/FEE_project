@@ -8,7 +8,3 @@ function showLoginPopup() {
     popup.style.display = 'none';
   }
   
-  function showCreateAccount() {
-    // Here, you can perform additional actions like creating the account or displaying a message
-    alert('Account Is Created Successfully');
-  }
